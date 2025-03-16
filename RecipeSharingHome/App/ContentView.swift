@@ -25,7 +25,8 @@ struct ContentView: View {
                 .fontWeight(.semibold)
                 .frame(height: 34)
             
-            // RECIPES
+            // RECIPES VIEW
+            
         }
         .padding()
     }
