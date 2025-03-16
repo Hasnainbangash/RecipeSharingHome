@@ -21,7 +21,7 @@ struct SearchView: View {
                     .foregroundColor(.black)
                 
                 Spacer()
-            }
+            } //: HSTACK
             .padding(12)
             .background(
                 RoundedRectangle(cornerRadius: 10)
@@ -37,7 +37,7 @@ struct SearchView: View {
                     .background(Color("ColorDarkGreen"))
                     .cornerRadius(10)
             }
-        }
+        } //: HSTACK
     }
 }
 
