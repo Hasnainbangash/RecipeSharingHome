@@ -42,4 +42,5 @@ struct SearchView: View {
 
 #Preview {
     SearchView()
+        .padding()
 }

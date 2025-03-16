@@ -9,11 +9,23 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        VStack(alignment: .leading, spacing: 20) {
+            // HEADER
+            HeaderView()
+            
+            // SEARCH VIEW
+            SearchView()
+            
+            // CATEGORIES
+            CategoryView()
+            
+            // TOTAL RECIPES
+            Text("10 Recipes")
+                .font(.title2)
+                .fontWeight(.semibold)
+                .frame(height: 34)
+            
+            // RECIPES
         }
         .padding()
     }
