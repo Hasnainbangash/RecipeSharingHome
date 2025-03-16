@@ -26,6 +26,7 @@ struct ContentView: View {
                 .frame(height: 34)
             
             // RECIPES VIEW
+            RecipeView()
             
         }
         .padding()
