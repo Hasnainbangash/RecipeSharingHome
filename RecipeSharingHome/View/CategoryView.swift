@@ -29,7 +29,7 @@ struct CategoryView: View {
                             .padding(.horizontal, 20)
                             .padding(.vertical, 10)
                             .background(selectedCategory == category ? Color("ColorDarkGreen") : Color("ColorLightGreen"))
-                            .foregroundColor(Color.white)
+                            .foregroundColor(selectedCategory == category ? Color.white : Color("ColorDarkGreen"))
                             .cornerRadius(10)
                             .onTapGesture {
                                 selectedCategory = category

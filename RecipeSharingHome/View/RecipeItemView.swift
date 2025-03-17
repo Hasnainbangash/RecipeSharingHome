@@ -74,10 +74,10 @@ struct RecipeItemView: View {
                     Text("4.5 (45)")
                         .foregroundColor(Color("ColorDarkGreen"))
                 } //: HSTACK
-                .padding(.vertical ,1)
-                .padding(.horizontal ,4)
+                .padding(.vertical ,6)
+                .padding(.horizontal ,8)
                 .background(Color("ColorLightGreen"))
-                .cornerRadius(8)
+                .cornerRadius(12)
             } //: HSTACK
             
             HStack(alignment: .center) {
