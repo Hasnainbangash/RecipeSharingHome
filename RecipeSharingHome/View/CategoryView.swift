@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CategoryView: View {
     var body: some View {
-        ScrollView(.horizontal) {
+        ScrollView(.horizontal, showsIndicators: false) {
             HStack(alignment: .center, spacing: 10) {
                 CategoriesItemView(categoryText: "Breakfast", categoryColor: "ColorDarkGreen")
                 CategoriesItemView(categoryText: "Lunch", categoryColor: "ColorLightGreen")

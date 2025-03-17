@@ -9,27 +9,29 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack(alignment: .leading, spacing: 20) {
-            // HEADER
-            HeaderView()
-            
-            // SEARCH VIEW
-            SearchView()
-            
-            // CATEGORIES
-            CategoryView()
-            
-            // TOTAL RECIPES
-            Text("10 Recipes")
-                .font(.title2)
-                .fontWeight(.semibold)
-                .frame(height: 34)
-            
-            // RECIPES VIEW
-            RecipeView()
-            
+        ScrollView(.vertical, showsIndicators: false) {
+            VStack(alignment: .leading, spacing: 20) {
+                // HEADER
+                HeaderView()
+                
+                // SEARCH VIEW
+                SearchView()
+                
+                // CATEGORIES
+                CategoryView()
+                
+                // TOTAL RECIPES
+                Text("10 Recipes")
+                    .font(.title2)
+                    .fontWeight(.semibold)
+                    .frame(height: 34)
+                
+                // RECIPES VIEW
+                RecipeView()
+                
+            }
+            .padding()
         }
-        .padding()
     }
 }
 

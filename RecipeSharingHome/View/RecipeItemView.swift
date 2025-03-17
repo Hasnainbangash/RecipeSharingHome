@@ -13,7 +13,7 @@ struct RecipeItemView: View {
             Image("Food1")
                 .resizable()
                 .scaledToFit()
-                .frame(minWidth: 0, maxWidth: .infinity)
+                .frame(height: 167)
                 .overlay(
                     Image(systemName: "trash")
                         .foregroundColor(Color.red)
@@ -29,8 +29,11 @@ struct RecipeItemView: View {
             
             HStack(alignment: .top) {
                 Image("ProfileImage1")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 44, height: 44, alignment: .center)
                 
-                VStack(alignment: .leading) {
+                VStack(alignment: .leading, spacing: 0) {
                     Text("Fluffy Pancakes")
                         .fontWeight(.semibold)
                     
@@ -47,7 +50,8 @@ struct RecipeItemView: View {
                     Text("4.5 (45)")
                         .foregroundColor(Color("ColorDarkGreen"))
                 } //: HSTACK
-                .padding(7)
+                .padding(.vertical ,1)
+                .padding(.horizontal ,4)
                 .background(Color("ColorLightGreen"))
                 .cornerRadius(8)
             } //: HSTACK

@@ -16,8 +16,8 @@ struct CategoriesItemView: View {
         Button(action: {}) {
             Text(categoryText)
                 .fontWeight(.semibold)
-                .padding(.horizontal, 25)
-                .padding(.vertical, 15)
+                .padding(.horizontal, 20)
+                .padding(.vertical, 10)
         }
         .accentColor(Color.white)
         .background(Color(categoryColor))
