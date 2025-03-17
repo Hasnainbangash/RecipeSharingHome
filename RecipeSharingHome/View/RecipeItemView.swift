@@ -8,8 +8,11 @@
 import SwiftUI
 
 struct RecipeItemView: View {
+    // MARK: - PROEPERTIES
     
     let recipe: Recipe
+    
+    // MARK: - BODY
     
     var body: some View {
         VStack(spacing: 15) {
@@ -63,7 +66,7 @@ struct RecipeItemView: View {
                     
                     Text("By \(recipe.recipeOwnerName)")
                         .foregroundColor(Color.gray.opacity(0.8))
-                }
+                } //: VSTACK
                 
                 Spacer()
                 
@@ -97,6 +100,8 @@ struct RecipeItemView: View {
         } //: VSTACK
     }
 }
+
+// MARK: - PREVIEW
 
 #Preview {
     RecipeItemView(recipe: recipeData[0])

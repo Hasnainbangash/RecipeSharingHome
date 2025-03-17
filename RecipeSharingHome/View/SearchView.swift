@@ -9,7 +9,10 @@ import SwiftUI
 
 struct SearchView: View {
     // MARK: - Properties
+    
     @State private var searchText: String = ""
+    
+    // MARK: - BODY
     
     var body: some View {
         HStack(spacing: 20) {
@@ -35,10 +38,12 @@ struct SearchView: View {
                     .frame(width: 44, height: 44)
                     .background(Color("ColorDarkGreen"))
                     .cornerRadius(10)
-            }
+            } //: BUTTON
         } //: HSTACK
     }
 }
+
+// MARK: - PREVIEW
 
 #Preview {
     SearchView()

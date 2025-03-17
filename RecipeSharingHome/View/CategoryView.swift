@@ -9,6 +9,7 @@ import SwiftUI
 
 struct CategoryView: View {
     // MARK: - PROPERTIES
+    
     @State private var selectedCategory: String = "Breakfast"
     
     let categories = [
@@ -19,6 +20,7 @@ struct CategoryView: View {
     ]
     
     // MARK: - BODY
+    
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack(alignment: .center, spacing: 10) {

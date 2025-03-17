@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct ContentView: View {
+    // MARK: - PROEPERTIES
+    
+    // MARK: - BODY
+    
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
             VStack(alignment: .leading, spacing: 20) {
@@ -29,11 +33,13 @@ struct ContentView: View {
                 // RECIPES VIEW
                 RecipeView()
                 
-            }
+            } //: VSTACK
             .padding()
-        }
+        } //: SCROLL
     }
 }
+
+// MARK: - PREVIEW
 
 #Preview {
     ContentView()
