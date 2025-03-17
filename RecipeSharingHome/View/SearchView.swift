@@ -25,7 +25,7 @@ struct SearchView: View {
             .padding(12)
             .background(
                 RoundedRectangle(cornerRadius: 10)
-                    .stroke(Color.gray.opacity(0.5), lineWidth: 1)
+                    .stroke(Color.gray.opacity(0.2), lineWidth: 1)
             )
             
             Button(action: {}) {
