@@ -61,7 +61,7 @@ struct RecipeItemView: View {
                     Text(recipe.recipeName)
                         .fontWeight(.semibold)
                     
-                    Text(recipe.recipeOwnerName)
+                    Text("By \(recipe.recipeOwnerName)")
                         .foregroundColor(Color.gray.opacity(0.8))
                 }
                 
