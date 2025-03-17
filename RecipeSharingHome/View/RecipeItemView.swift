@@ -8,10 +8,13 @@
 import SwiftUI
 
 struct RecipeItemView: View {
+    
+    let recipe: Recipe
+    
     var body: some View {
         VStack(spacing: 15) {
             // FOOD IMAGE
-            Image("Food1")
+            Image(recipe.recipeImage)
                 .resizable()
                 .scaledToFit()
                 .frame(height: 167)
@@ -49,16 +52,16 @@ struct RecipeItemView: View {
             // PROFILE
             
             HStack(alignment: .top) {
-                Image("ProfileImage1")
+                Image(recipe.recipeOwnerImage)
                     .resizable()
                     .scaledToFit()
                     .frame(width: 44, height: 44, alignment: .center)
                 
                 VStack(alignment: .leading, spacing: 0) {
-                    Text("Fluffy Pancakes")
+                    Text(recipe.recipeName)
                         .fontWeight(.semibold)
                     
-                    Text("By Guy Hawkins")
+                    Text(recipe.recipeOwnerName)
                         .foregroundColor(Color.gray.opacity(0.8))
                 }
                 
@@ -96,6 +99,6 @@ struct RecipeItemView: View {
 }
 
 #Preview {
-    RecipeItemView()
+    RecipeItemView(recipe: recipeData[0])
         .padding()
 }

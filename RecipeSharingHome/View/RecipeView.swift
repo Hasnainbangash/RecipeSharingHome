@@ -8,10 +8,13 @@
 import SwiftUI
 
 struct RecipeView: View {
+    // MARK: - PROEPRTIES
+    let recipes: [Recipe] = recipeData
+    
     var body: some View {
-        RecipeItemView()
-        RecipeItemView()
-        RecipeItemView()
+        ForEach(recipes) { recipe in
+            RecipeItemView(recipe: recipe)
+        }
     }
 }
 
